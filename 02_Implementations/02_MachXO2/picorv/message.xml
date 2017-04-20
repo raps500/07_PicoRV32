@@ -1,0 +1,2648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_ldmem</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_stmem</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_shift</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_exec</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_ld_rs2</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_ld_rs1</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_fetch</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>cpu_state_trap</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TRACE_IRQ</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TRACE_ADDR</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TRACE_BRANCH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>WITH_PCPI</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>regindex_bits</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>regfile_size</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>irqregs_offset</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>irq_buserror</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>irq_ebreak</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>irq_timer</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STACKADDR</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PROGADDR_IRQ</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PROGADDR_RESET</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LATCHED_IRQ</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MASKED_IRQ</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>REGS_INIT_ZERO</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_TRACE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_IRQ_TIMER</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_IRQ_QREGS</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_IRQ</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_DIV</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_FAST_MUL</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_MUL</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_PCPI</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CATCH_ILLINSN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CATCH_MISALIGN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COMPRESSED_ISA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TWO_CYCLE_ALU</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TWO_CYCLE_COMPARE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TWO_STAGE_SHIFT</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LATCHED_MEM_RDATA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_REGS_DUALPORT</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_REGS_16_31</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_COUNTERS64</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_COUNTERS</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ENABLE_COUNTERS</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>LATCHED_MEM_RDATA</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TWO_STAGE_SHIFT</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>TWO_CYCLE_ALU</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CATCH_MISALIGN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CATCH_ILLINSN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MEM_SIZE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_45_0_COUT</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_45_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_45_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_45_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_81_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_81_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_81_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_81_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_21_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_21_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_21_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_21_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_57_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_57_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_57_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_57_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_27_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_27_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_27_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_27_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_33_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_33_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_33_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_33_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_51_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_51_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_51_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_51_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_9_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_9_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_9_0_S1</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_9_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_I_1_0_S0</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_I_1_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_eq_2_0_N_77</Dynamic>
+            <Navigation>cpu/alu_eq_2_0_N_77</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_COUT[30]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_COUT[30]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[30]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[30]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[26]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[26]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[26]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[26]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[22]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[22]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[22]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[22]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[18]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[18]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[18]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[18]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[15]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[15]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[13]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[13]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[13]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[13]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[11]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[11]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[11]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[11]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[9]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[9]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[9]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[9]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[7]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[7]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[5]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[5]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[3]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[3]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[1]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[1]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S0[0]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_lts_2_cry_0_S1[0]</Dynamic>
+            <Navigation>cpu/alu_lts_2_cry_0_S1[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_COUT[30]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_COUT[30]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[30]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[30]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[26]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[26]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[26]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[26]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[22]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[22]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[22]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[22]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[18]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[18]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[18]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[18]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[15]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[15]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[15]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[13]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[13]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[13]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[13]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[11]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[11]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[11]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[11]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[9]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[9]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[9]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[9]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[7]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[7]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[5]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[5]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[5]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[3]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[3]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[1]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[1]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S0[0]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_ltu_2_cry_0_S1[0]</Dynamic>
+            <Navigation>cpu/alu_ltu_2_cry_0_S1[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_add_sub_2_s_31_0_COUT</Dynamic>
+            <Navigation>cpu/alu_add_sub_2_s_31_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_add_sub_2_s_31_0_S1</Dynamic>
+            <Navigation>cpu/alu_add_sub_2_s_31_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/alu_add_sub_2_cry_0_0_S0</Dynamic>
+            <Navigation>cpu/alu_add_sub_2_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un32_reg_op1_s_31_0_COUT</Dynamic>
+            <Navigation>cpu/un32_reg_op1_s_31_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un32_reg_op1_s_31_0_S1</Dynamic>
+            <Navigation>cpu/un32_reg_op1_s_31_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un32_reg_op1_cry_0_0_S0</Dynamic>
+            <Navigation>cpu/un32_reg_op1_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un32_reg_op1_cry_0_0_S1</Dynamic>
+            <Navigation>cpu/un32_reg_op1_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un1_decoded_imm_uj_1_cry_29_0_COUT</Dynamic>
+            <Navigation>cpu/un1_decoded_imm_uj_1_cry_29_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un1_decoded_imm_uj_1_cry_0_0_S0</Dynamic>
+            <Navigation>cpu/un1_decoded_imm_uj_1_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/un1_decoded_imm_uj_1_cry_0_0_S1</Dynamic>
+            <Navigation>cpu/un1_decoded_imm_uj_1_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/reg_sh_cry_0_COUT[3]</Dynamic>
+            <Navigation>cpu/reg_sh_cry_0_COUT[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/reg_sh_cry_0_S0[0]</Dynamic>
+            <Navigation>cpu/reg_sh_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_wrdata_4_s_29_0_COUT</Dynamic>
+            <Navigation>cpu/cpuregs_wrdata_4_s_29_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_wrdata_4_s_29_0_S1</Dynamic>
+            <Navigation>cpu/cpuregs_wrdata_4_s_29_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_wrdata_4_cry_0_0_S0</Dynamic>
+            <Navigation>cpu/cpuregs_wrdata_4_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/reg_out_13_0_s_29_0_COUT</Dynamic>
+            <Navigation>cpu/reg_out_13_0_s_29_0_COUT</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/reg_out_13_0_s_29_0_S1</Dynamic>
+            <Navigation>cpu/reg_out_13_0_s_29_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/reg_out_13_0_cry_0_0_S0</Dynamic>
+            <Navigation>cpu/reg_out_13_0_cry_0_0_S0</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/reg_out_13_0_cry_0_0_S1</Dynamic>
+            <Navigation>cpu/reg_out_13_0_cry_0_0_S1</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_cpuregs_0_1_DO5</Dynamic>
+            <Navigation>cpu/cpuregs_cpuregs_0_1_DO5</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_cpuregs_0_1_DO6</Dynamic>
+            <Navigation>cpu/cpuregs_cpuregs_0_1_DO6</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_cpuregs_0_1_DO7</Dynamic>
+            <Navigation>cpu/cpuregs_cpuregs_0_1_DO7</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_cpuregs_0_1_DO8</Dynamic>
+            <Navigation>cpu/cpuregs_cpuregs_0_1_DO8</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_1_cpuregs_1_0_1_DO5</Dynamic>
+            <Navigation>cpu/cpuregs_1_cpuregs_1_0_1_DO5</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_1_cpuregs_1_0_1_DO6</Dynamic>
+            <Navigation>cpu/cpuregs_1_cpuregs_1_0_1_DO6</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_1_cpuregs_1_0_1_DO7</Dynamic>
+            <Navigation>cpu/cpuregs_1_cpuregs_1_0_1_DO7</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cpu/cpuregs_1_cpuregs_1_0_1_DO8</Dynamic>
+            <Navigation>cpu/cpuregs_1_cpuregs_1_0_1_DO8</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>memory[0]_memory[0]_0_0_DO8</Dynamic>
+            <Navigation>memory[0]_memory[0]_0_0_DO8</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>resetn_counter_cry_0_S0[0]</Dynamic>
+            <Navigation>resetn_counter_cry_0_S0[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>resetn_counter_s_0_S1[7]</Dynamic>
+            <Navigation>resetn_counter_s_0_S1[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>resetn_counter_s_0_COUT[7]</Dynamic>
+            <Navigation>resetn_counter_s_0_COUT[7]</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>101</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG107 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1343:18:1343:20|Extending unsized constant with leading x/z beyond 32 bits</Dynamic>
+            <Navigation>CG107</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1343</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>1343</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Extending unsized constant with leading x/z beyond 32 bits</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG107 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1344:18:1344:20|Extending unsized constant with leading x/z beyond 32 bits</Dynamic>
+            <Navigation>CG107</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1344</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>1344</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Extending unsized constant with leading x/z beyond 32 bits</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG107 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1368:17:1368:19|Extending unsized constant with leading x/z beyond 32 bits</Dynamic>
+            <Navigation>CG107</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1368</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>1368</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Extending unsized constant with leading x/z beyond 32 bits</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG532 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:177:1:177:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored</Dynamic>
+            <Navigation>CG532</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>177</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>177</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:176:9:176:9|No assignment to i</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>176</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>176</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>No assignment to i</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:337:12:337:27|No assignment to mem_16bit_buffer</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>337</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>337</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>No assignment to mem_16bit_buffer</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1174:11:1174:30|No assignment to pcpi_timeout_counter</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1174</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>1174</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>No assignment to pcpi_timeout_counter</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register set_mem_do_rinst</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register set_mem_do_rinst </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register set_mem_do_rdata</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register set_mem_do_rdata </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register set_mem_do_wdata</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register set_mem_do_wdata </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register alu_out_0_q</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register alu_out_0_q </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register dbg_rs1val[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_rs1val[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register dbg_rs2val[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_rs2val[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register dbg_rs1val_valid</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_rs1val_valid </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register dbg_rs2val_valid</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_rs2val_valid </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register count_cycle[63:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register count_cycle[63:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register count_instr[63:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register count_instr[63:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register next_irq_pending[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register next_irq_pending[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register latched_trace</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register latched_trace </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register pcpi_timeout</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register pcpi_timeout </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register irq_active</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register irq_active </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register irq_delay</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register irq_delay </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register irq_mask[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register irq_mask[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register irq_state[1:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register irq_state[1:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register timer[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register timer[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register current_pc[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register current_pc[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register irq_pending[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register irq_pending[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1247:1:1247:6|Pruning register clear_prefetched_high_word_q</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1247</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1247</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register clear_prefetched_high_word_q </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1189:2:1189:7|Pruning register genblk3.alu_shl[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1189</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>1189</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Pruning register genblk3.alu_shl[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1189:2:1189:7|Pruning register genblk3.alu_shr[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1189</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>1189</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Pruning register genblk3.alu_shr[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_waitirq</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_waitirq </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_rdcycle</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_rdcycle </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_rdcycleh</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_rdcycleh </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_rdinstr</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_rdinstr </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_rdinstrh</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_rdinstrh </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_getq</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_getq </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_setq</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_setq </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_maskirq</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_maskirq </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register instr_timer</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register instr_timer </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register q_ascii_instr[63:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register q_ascii_instr[63:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register q_insn_imm[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register q_insn_imm[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register q_insn_opcode[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register q_insn_opcode[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register q_insn_rs1[4:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register q_insn_rs1[4:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register q_insn_rs2[4:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register q_insn_rs2[4:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register q_insn_rd[4:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register q_insn_rd[4:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register dbg_next</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_next </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register dbg_valid_insn</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_valid_insn </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register cached_ascii_instr[63:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register cached_ascii_instr[63:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register cached_insn_imm[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register cached_insn_imm[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register cached_insn_opcode[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register cached_insn_opcode[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register cached_insn_rs1[4:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register cached_insn_rs1[4:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register cached_insn_rs2[4:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register cached_insn_rs2[4:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register cached_insn_rd[4:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register cached_insn_rd[4:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:746:1:746:6|Pruning register dbg_insn_addr[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>746</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register dbg_insn_addr[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:535:1:535:6|Pruning register mem_la_secondword</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register mem_la_secondword </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:535:1:535:6|Pruning register prefetched_high_word</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register prefetched_high_word </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:400:1:400:6|Pruning register next_insn_opcode[31:0]</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>400</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>400</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register next_insn_opcode[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:360:1:360:6|Pruning register mem_la_firstword_reg</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>360</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>360</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register mem_la_firstword_reg </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:360:1:360:6|Pruning register last_mem_valid</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>360</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>360</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register last_mem_valid </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit do_waitirq is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit do_waitirq is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit trace_valid is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit trace_valid is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit pcpi_valid is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit pcpi_valid is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[0] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[0] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[1] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[1] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[2] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[2] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[3] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[3] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[4] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[4] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[5] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[5] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[6] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[6] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[7] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[7] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[8] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[8] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[9] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[9] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[10] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[10] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[11] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[11] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[12] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[12] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[13] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[13] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[14] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[14] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[15] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[15] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[16] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[16] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[17] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[17] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[18] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[18] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[19] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[19] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[20] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[20] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[21] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[21] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[22] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[22] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[23] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[23] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[24] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[24] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[25] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[25] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[26] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[26] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[27] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[27] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[28] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[28] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[29] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[29] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[30] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[30] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit eoi[31] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit eoi[31] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Register bit compressed_instr is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit compressed_instr is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Register bit instr_retirq is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit instr_retirq is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Register bit decoded_imm_uj[0] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit decoded_imm_uj[0] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:535:1:535:6|Register bit mem_addr[0] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit mem_addr[0] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:535:1:535:6|Register bit mem_addr[1] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit mem_addr[1] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit reg_pc[0] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit reg_pc[0] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit reg_pc[1] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit reg_pc[1] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit alu_wait_2 is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit alu_wait_2 is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit reg_next_pc[0] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit reg_next_pc[0] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit reg_next_pc[1] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit reg_next_pc[1] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register bits 1 to 0 of reg_next_pc[31:0]</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 1 to 0 of reg_next_pc[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:535:1:535:6|Pruning register bits 1 to 0 of mem_addr[31:0]</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>535</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 1 to 0 of mem_addr[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register bit 0 of decoded_imm_uj[31:0]</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bit 0 of decoded_imm_uj[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register bits 1 to 0 of reg_pc[31:0]</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 1 to 0 of reg_pc[31:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG371 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:55:9:55:17|Cannot find data file firmware.hex for task $readmemh</Dynamic>
+            <Navigation>CG371</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>Cannot find data file firmware.hex for task $readmemh</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG532 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:55:1:55:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored</Dynamic>
+            <Navigation>CG532</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>55</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:37:3:37:5|Undriven input pcpi_wr on instance cpu, tying to 0</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Undriven input pcpi_wr on instance cpu, tying to 0</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:37:3:37:5|Undriven input pcpi_rd on instance cpu, tying to 0</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Undriven input pcpi_rd on instance cpu, tying to 0</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:37:3:37:5|Undriven input pcpi_wait on instance cpu, tying to 0</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Undriven input pcpi_wait on instance cpu, tying to 0</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:37:3:37:5|Undriven input pcpi_ready on instance cpu, tying to 0</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Undriven input pcpi_ready on instance cpu, tying to 0</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:37:3:37:5|Undriven input irq on instance cpu, tying to 0</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Undriven input irq on instance cpu, tying to 0</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:57:1:57:6|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:57:1:57:6|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:57:1:57:6|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v&quot;:57:1:57:6|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Dynamic>
+            <Navigation></Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>57</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a &quot;don't-care&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL138 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Removing register 'latched_compr' because it is only assigned 0 or its original value.</Dynamic>
+            <Navigation>CL138</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing register 'latched_compr' because it is only assigned 0 or its original value.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Pruning register bits 35 to 1 of trace_data[35:0]</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 35 to 1 of trace_data[35:0] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL189 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Register bit trace_data[0] is always 0, optimizing ...</Dynamic>
+            <Navigation>CL189</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Register bit trace_data[0] is always 0, optimizing ...</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:826:1:826:6|Pruning register bits 31 to 21 of decoded_imm_uj[31:1]</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>826</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Pruning register bits 31 to 21 of decoded_imm_uj[31:1] </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:101:19:101:25|Input pcpi_wr is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>101</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Input pcpi_wr is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:102:19:102:25|Input pcpi_rd is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>102</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Input pcpi_rd is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:103:19:103:27|Input pcpi_wait is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>Input pcpi_wait is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:104:19:104:28|Input pcpi_ready is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>Input pcpi_ready is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL159 :&quot;C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v&quot;:107:19:107:21|Input irq is unused</Dynamic>
+            <Navigation>CL159</Navigation>
+            <Navigation>C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>107</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Input irq is unused</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1309:1:1309:6|Found inferred clock top|clk which controls 625 sequential elements including cpu.reg_next_pc[31:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1309</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock top|clk which controls 625 sequential elements including cpu.reg_next_pc[31:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_waddr_tmp[0],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[0]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_waddr_tmp[0],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_waddr_tmp[1],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[1]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_waddr_tmp[1],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_waddr_tmp[2],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[2]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_waddr_tmp[2],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_waddr_tmp[3],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[3]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_waddr_tmp[3],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_waddr_tmp[4],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[4]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_waddr_tmp[4],  because it is equivalent to instance cpu.cpuregs_waddr_tmp[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_raddr_tmp[0],  because it is equivalent to instance cpu.decoded_rs2[0]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_raddr_tmp[0],  because it is equivalent to instance cpu.decoded_rs2[0]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_raddr_tmp[1],  because it is equivalent to instance cpu.decoded_rs2[1]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_raddr_tmp[1],  because it is equivalent to instance cpu.decoded_rs2[1]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_raddr_tmp[2],  because it is equivalent to instance cpu.decoded_rs2[2]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_raddr_tmp[2],  because it is equivalent to instance cpu.decoded_rs2[2]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_raddr_tmp[3],  because it is equivalent to instance cpu.decoded_rs2[3]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_raddr_tmp[3],  because it is equivalent to instance cpu.decoded_rs2[3]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v&quot;:1290:1:1290:6|Removing instance cpu.cpuregs_1_raddr_tmp[4],  because it is equivalent to instance cpu.decoded_rs2[4]</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>1290</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Removing instance cpu.cpuregs_1_raddr_tmp[4],  because it is equivalent to instance cpu.decoded_rs2[4]</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock top|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock top|clk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,25 @@
+PAR: Place And Route Diamond (64-bit) 3.6.0.83.4.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Apr 15 06:55:11 2017
+
+C:/lscc/diamond/3.6_x64/ispfpga\bin\nt64\par -f picorv_picorv.p2t
+picorv_picorv_map.ncd picorv_picorv.dir picorv_picorv.prf -gui
+
+
+Preference file: picorv_picorv.prf.
+
+Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
+Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
+----------  --------    -----       ------      ----------- ----------- -----       ------
+5_1   *     0           -4.894      14716770    0.138       0           27          Complete        
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 27 secs 
+
+par done!

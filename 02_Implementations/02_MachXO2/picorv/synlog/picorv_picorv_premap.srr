@@ -1,0 +1,52 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1264R, Built Aug 18 2015 10:39:57
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@L: C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\picorv_picorv_scck.rpt 
+Printing clock  summary report in "C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\picorv_picorv_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":535:1:535:6|Removing sequential instance mem_instr of view:PrimLib.dffe(prim) in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":826:1:826:6|Removing sequential instance pcpi_insn[31:0] of view:PrimLib.dff(prim) in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start       Requested     Requested     Clock        Clock              
+Clock       Frequency     Period        Type         Group              
+------------------------------------------------------------------------
+top|clk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0
+========================================================================
+
+@W: MT529 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Found inferred clock top|clk which controls 625 sequential elements including cpu.reg_next_pc[31:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Apr 15 06:54:54 2017
+
+###########################################################]

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "picorv_picorv.log"
+-o "picorv_picorv.csv"
+-pr "picorv_picorv.prf"

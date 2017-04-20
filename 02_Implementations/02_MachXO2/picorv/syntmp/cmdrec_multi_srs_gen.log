@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.6_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synwork\picorv_picorv_comp.srs  -osyn  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synwork\picorv_picorv_mult.srs  -log  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synlog\picorv_picorv_multi_srs_gen.srr 
+rc:0 success:1
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synwork\picorv_picorv_comp.srs|i|1492232091|28936
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synwork\picorv_picorv_mult.srs|o|1492232092|9519
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synlog\picorv_picorv_multi_srs_gen.srr|o|1492232092|377
+C:\lscc\diamond\3.6_x64\synpbase\bin\syn_nfilter.exe|i|1439948812|3007488
+C:\lscc\diamond\3.6_x64\synpbase\bin64\syn_nfilter.exe|i|1439948998|3974144

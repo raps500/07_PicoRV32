@@ -1,0 +1,4 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":535:1:535:6|Removing sequential instance mem_instr of view:PrimLib.dffe(prim) in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":826:1:826:6|Removing sequential instance pcpi_insn[31:0] of view:PrimLib.dff(prim) in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 

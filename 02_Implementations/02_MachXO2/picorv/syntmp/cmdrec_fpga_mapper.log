@@ -1,0 +1,11 @@
+C:\lscc\diamond\3.6_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv   -part LCMXO2_7000HE  -package TG144C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synlog\report\picorv_picorv_fpga_mapper.xml  -top_level_module  top  -flow mapping  -multisrs  -oedif  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\picorv_picorv.edi   -freq 1.000   C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synwork\picorv_picorv_prem.srd  -devicelib  C:\lscc\diamond\3.6_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.6_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\syntmp\picorv_picorv.plg  -osyn  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\picorv_picorv.srm  -prjdir  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\  -prjname  proj_1  -log  C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synlog\picorv_picorv_fpga_mapper.srr 
+rc:1 success:1
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\picorv_picorv.edi|o|1492232099|1184616
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synwork\picorv_picorv_prem.srd|i|1492232094|48997
+C:\lscc\diamond\3.6_x64\synpbase\lib\lucent\machxo2.v|i|1439942374|54295
+C:\lscc\diamond\3.6_x64\synpbase\lib\lucent\pmi_def.v|i|1439942374|40584
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\syntmp\picorv_picorv.plg|o|1492232100|638
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\picorv_picorv.srm|o|1492232099|22358
+C:\02_Elektronik\044_RISCV\07_PICORV\02_Implementations\02_MachXO2\picorv\synlog\picorv_picorv_fpga_mapper.srr|o|1492232100|26775
+C:\lscc\diamond\3.6_x64\synpbase\bin\m_gen_lattice.exe|i|1439943452|17489920
+C:\lscc\diamond\3.6_x64\synpbase\bin64\m_gen_lattice.exe|i|1439945084|20782592

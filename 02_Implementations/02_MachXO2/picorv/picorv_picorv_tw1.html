@@ -1,0 +1,363 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file picorv_picorv_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.6_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 31.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.6.0.83.4</big></U></B>
+Sat Apr 15 06:55:10 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o picorv_picorv.tw1 -gui picorv_picorv_map.ncd picorv_picorv.prf 
+Design file:     picorv_picorv_map.ncd
+Preference file: picorv_picorv.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "clk_c" 98.416000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  63.103MHz is the maximum frequency for this preference.
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "clk_c" 98.416000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 5.686ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_addr_1_pipe_103  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram/RAM0  (to clk_c +)
+                   FF                        memory[0]_ram/RAM0
+
+   Delay:              15.739ns  (31.2% logic, 68.8% route), 10 logic levels.
+
+ Constraint Details:
+
+     15.739ns physical path delay SLICE_824 to SLICE_126 exceeds
+     10.161ns delay constraint less
+      0.108ns WRE_SET requirement (totaling 10.053ns) by 5.686ns
+
+ Physical Path Details:
+
+      Data path SLICE_824 to SLICE_126:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452  SLICE_824.CLK to   SLICE_824.Q0 SLICE_824 (from clk_c)
+ROUTE         1   e 1.234   SLICE_824.Q0 to */SLICE_707.B0 cpu/reg_next_pcf[22]
+CTOF_DEL    ---     0.495 */SLICE_707.B0 to */SLICE_707.F0 cpu/SLICE_707
+ROUTE         1   e 0.480 */SLICE_707.F0 to */SLICE_707.A1 cpu/N_2046
+CTOF_DEL    ---     0.495 */SLICE_707.A1 to */SLICE_707.F1 cpu/SLICE_707
+ROUTE         1   e 1.234 */SLICE_707.F1 to   SLICE_825.D0 cpu/mem_rdata_ret_16c_9_1
+CTOF_DEL    ---     0.495   SLICE_825.D0 to   SLICE_825.F0 SLICE_825
+ROUTE         2   e 1.234   SLICE_825.F0 to */SLICE_768.B0 mem_rdata_ret_16c_9
+CTOF_DEL    ---     0.495 */SLICE_768.B0 to */SLICE_768.F0 cpu/SLICE_768
+ROUTE         1   e 1.234 */SLICE_768.F0 to */SLICE_758.A0 cpu/mem_ready_2_i_a2_2_6
+CTOF_DEL    ---     0.495 */SLICE_758.A0 to */SLICE_758.F0 cpu/SLICE_758
+ROUTE         1   e 1.234 */SLICE_758.F0 to */SLICE_718.A1 cpu/mem_ready_2_i_a2_2_8
+CTOF_DEL    ---     0.495 */SLICE_718.A1 to */SLICE_718.F1 cpu/SLICE_718
+ROUTE         2   e 0.480 */SLICE_718.F1 to */SLICE_718.B0 cpu/N_68
+CTOF_DEL    ---     0.495 */SLICE_718.B0 to */SLICE_718.F0 cpu/SLICE_718
+ROUTE         6   e 1.234 */SLICE_718.F0 to */SLICE_729.A1 cpu/N_69
+CTOF_DEL    ---     0.495 */SLICE_729.A1 to */SLICE_729.F1 cpu/SLICE_729
+ROUTE         8   e 1.234 */SLICE_729.F1 to */SLICE_831.A1 cpu/un1_mem_wstrb_3_0_a2
+CTOF_DEL    ---     0.495 */SLICE_831.A1 to */SLICE_831.F1 cpu/SLICE_831
+ROUTE         4   e 1.234 */SLICE_831.F1 to  SLICE_126.WRE memory[0]_en (to clk_c)
+                  --------
+                   15.739   (31.2% logic, 68.8% route), 10 logic levels.
+
+Warning:  63.103MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 98.416000 MHz ;   |   98.416 MHz|   63.103 MHz|  10 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+cpu/mem_ready_2_i_a2_2_8                |       1|    2997|     73.17%
+                                        |        |        |
+cpu/N_69                                |       6|    2997|     73.17%
+                                        |        |        |
+cpu/N_68                                |       2|    2997|     73.17%
+                                        |        |        |
+cpu/mem_ready_2_i_a2_2_6                |       1|    2493|     60.86%
+                                        |        |        |
+cpu/reg_out_13_0_cry_8                  |       1|    1087|     26.54%
+                                        |        |        |
+cpu/reg_out_13_0_cry_10                 |       1|    1087|     26.54%
+                                        |        |        |
+cpu/reg_out_13_0_cry_12                 |       1|    1087|     26.54%
+                                        |        |        |
+cpu/reg_out_13_0_cry_14                 |       1|    1087|     26.54%
+                                        |        |        |
+cpu/reg_out_13_0_cry_16                 |       1|    1087|     26.54%
+                                        |        |        |
+cpu/reg_out_13_0_cry_6                  |       1|    1083|     26.44%
+                                        |        |        |
+cpu/mem_addr_1_pipe_4                   |      30|     999|     24.39%
+                                        |        |        |
+cpu/reg_out_13_0_cry_4                  |       1|     964|     23.54%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_22             |       1|     955|     23.32%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_24             |       1|     955|     23.32%
+                                        |        |        |
+cpu/un1_mem_wstrb_3_0_a2                |       8|     924|     22.56%
+                                        |        |        |
+cpu/un1_mem_wstrb_4_0_a2                |       8|     924|     22.56%
+                                        |        |        |
+cpu/un1_mem_wstrb_5_0_a2                |       8|     924|     22.56%
+                                        |        |        |
+cpu/reg_out_13_0_cry_18                 |       1|     875|     21.36%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_26             |       1|     839|     20.48%
+                                        |        |        |
+cpu/reg_out_13_0_cry_2                  |       1|     656|     16.02%
+                                        |        |        |
+cpu/mem_rdata_ret_16c_9_1               |       1|     651|     15.89%
+                                        |        |        |
+cpu/mem_rdata_ret_16c_10_1              |       1|     651|     15.89%
+                                        |        |        |
+cpu/mem_rdata_ret_16c_11_1              |       1|     651|     15.89%
+                                        |        |        |
+mem_rdata_ret_16c_11                    |       2|     651|     15.89%
+                                        |        |        |
+mem_rdata_ret_16c_10                    |       2|     651|     15.89%
+                                        |        |        |
+mem_rdata_ret_16c_9                     |       2|     651|     15.89%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_20             |       1|     591|     14.43%
+                                        |        |        |
+cpu/mem_rdata_ret_16c_8_1               |       1|     540|     13.18%
+                                        |        |        |
+mem_rdata_ret_16c_8                     |       2|     540|     13.18%
+                                        |        |        |
+cpu/reg_out_13_0_cry_20                 |       1|     508|     12.40%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 550
+   Covered under: FREQUENCY NET "clk_c" 98.416000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 18709737
+Cumulative negative slack: 18709737
+
+Constraints cover 121243 paths, 1 nets, and 7931 connections (95.20% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.6.0.83.4</big></U></B>
+Sat Apr 15 06:55:10 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o picorv_picorv.tw1 -gui picorv_picorv_map.ncd picorv_picorv.prf 
+Design file:     picorv_picorv_map.ncd
+Preference file: picorv_picorv.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "clk_c" 98.416000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "clk_c" 98.416000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              resetn_counter[0]  (from clk_c +)
+   Destination:    FF         Data in        resetn_counter[0]  (to clk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay SLICE_0 to SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    SLICE_0.CLK to     SLICE_0.Q1 SLICE_0 (from clk_c)
+ROUTE         6   e 0.199     SLICE_0.Q1 to     SLICE_0.A1 resetn_counter[0]
+CTOF_DEL    ---     0.101     SLICE_0.A1 to     SLICE_0.F1 SLICE_0
+ROUTE         1   e 0.001     SLICE_0.F1 to    SLICE_0.DI1 resetn_counter_s[0] (to clk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 98.416000 MHz ;   |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 550
+   Covered under: FREQUENCY NET "clk_c" 98.416000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 121243 paths, 1 nets, and 8323 connections (99.90% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 18709737 (setup), 0 (hold)
+Cumulative negative slack: 18709737 (18709737+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

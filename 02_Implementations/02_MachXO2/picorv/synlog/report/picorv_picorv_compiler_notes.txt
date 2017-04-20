@@ -1,0 +1,14 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v":49:7:49:14|Synthesizing module picorv32
+@N: CL134 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v":1290:1:1290:6|Found RAM cpuregs, depth=32, width=32
+@N: CL134 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v":1290:1:1290:6|Found RAM cpuregs, depth=32, width=32
+@N: CG364 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v":3:7:3:9|Synthesizing module top
+@N: CL134 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Found RAM memory[0], depth=128, width=8
+@N: CL134 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Found RAM memory[0], depth=128, width=8
+@N: CL134 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Found RAM memory[0], depth=128, width=8
+@N: CL134 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Found RAM memory[0], depth=128, width=8
+@N: CL201 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v":1309:1:1309:6|Trying to extract state machine for register cpu_state
+@N: CL201 :"C:\02_Elektronik\044_RISCV\07_PICORV\01_Sources\picorv32\picorv32.v":535:1:535:6|Trying to extract state machine for register mem_state
+@N|Running in 64-bit mode
+

@@ -1,0 +1,222 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Apr 15 06:55:00 2017
+#
+
+
+Top view:               top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.546
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+top|clk            1.0 MHz       68.9 MHz      1000.000      14.509        985.491     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+top|clk   top|clk  |  0.000       -0.546  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: top|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                            Arrival           
+Instance              Reference     Type        Pin     Net               Time        Slack 
+                      Clock                                                                 
+--------------------------------------------------------------------------------------------
+cpu.mem_wdata[24]     top|clk       FD1P3AX     Q       mem_wdata[24]     0.680       -0.546
+cpu.mem_wdata[25]     top|clk       FD1P3AX     Q       mem_wdata[25]     0.680       -0.546
+cpu.mem_wdata[26]     top|clk       FD1P3AX     Q       mem_wdata[26]     0.680       -0.546
+cpu.mem_wdata[27]     top|clk       FD1P3AX     Q       mem_wdata[27]     0.680       -0.546
+cpu.mem_wdata[28]     top|clk       FD1P3AX     Q       mem_wdata[28]     0.680       -0.546
+cpu.mem_wdata[29]     top|clk       FD1P3AX     Q       mem_wdata[29]     0.680       -0.546
+cpu.mem_wdata[30]     top|clk       FD1P3AX     Q       mem_wdata[30]     0.680       -0.546
+cpu.mem_wdata[31]     top|clk       FD1P3AX     Q       mem_wdata[31]     0.680       -0.546
+cpu.latched_rd[0]     top|clk       FD1S3AX     Q       latched_rd[0]     0.832       -0.346
+cpu.latched_rd[1]     top|clk       FD1S3AX     Q       latched_rd[1]     0.832       -0.346
+============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                Starting                                             Required           
+Instance                        Reference     Type        Pin      Net               Time         Slack 
+                                Clock                                                                   
+--------------------------------------------------------------------------------------------------------
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI0      mem_wdata[24]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI1      mem_wdata[25]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI2      mem_wdata[26]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI3      mem_wdata[27]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI4      mem_wdata[28]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI5      mem_wdata[29]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI6      mem_wdata[30]     1.227        -0.546
+memory\[0\]_memory\[0\]_0_0     top|clk       SP8KC       DI7      mem_wdata[31]     1.227        -0.546
+cpu.cpuregs_1_cpuregs_1_0_0     top|clk       PDPW8KC     ADW0     latched_rd[0]     1.178        -0.346
+cpu.cpuregs_1_cpuregs_1_0_0     top|clk       PDPW8KC     ADW1     latched_rd[1]     1.178        -0.346
+========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          cpu.mem_wdata[24] / Q
+    Ending point:                            memory\[0\]_memory\[0\]_0_0 / DI0
+    The start point is clocked by            top|clk [rising] on pin CK
+    The end   point is clocked by            top|clk [rising] on pin CLK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+cpu.mem_wdata[24]               FD1P3AX     Q        Out     0.680     0.680       -         
+mem_wdata[24]                   Net         -        -       -         -           1         
+memory\[0\]_memory\[0\]_0_0     SP8KC       DI0      In      0.000     0.680       -         
+=============================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          cpu.mem_wdata[25] / Q
+    Ending point:                            memory\[0\]_memory\[0\]_0_0 / DI1
+    The start point is clocked by            top|clk [rising] on pin CK
+    The end   point is clocked by            top|clk [rising] on pin CLK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+cpu.mem_wdata[25]               FD1P3AX     Q        Out     0.680     0.680       -         
+mem_wdata[25]                   Net         -        -       -         -           1         
+memory\[0\]_memory\[0\]_0_0     SP8KC       DI1      In      0.000     0.680       -         
+=============================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          cpu.mem_wdata[26] / Q
+    Ending point:                            memory\[0\]_memory\[0\]_0_0 / DI2
+    The start point is clocked by            top|clk [rising] on pin CK
+    The end   point is clocked by            top|clk [rising] on pin CLK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+cpu.mem_wdata[26]               FD1P3AX     Q        Out     0.680     0.680       -         
+mem_wdata[26]                   Net         -        -       -         -           1         
+memory\[0\]_memory\[0\]_0_0     SP8KC       DI2      In      0.000     0.680       -         
+=============================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          cpu.mem_wdata[27] / Q
+    Ending point:                            memory\[0\]_memory\[0\]_0_0 / DI3
+    The start point is clocked by            top|clk [rising] on pin CK
+    The end   point is clocked by            top|clk [rising] on pin CLK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+cpu.mem_wdata[27]               FD1P3AX     Q        Out     0.680     0.680       -         
+mem_wdata[27]                   Net         -        -       -         -           1         
+memory\[0\]_memory\[0\]_0_0     SP8KC       DI3      In      0.000     0.680       -         
+=============================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          cpu.mem_wdata[28] / Q
+    Ending point:                            memory\[0\]_memory\[0\]_0_0 / DI4
+    The start point is clocked by            top|clk [rising] on pin CK
+    The end   point is clocked by            top|clk [rising] on pin CLK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+cpu.mem_wdata[28]               FD1P3AX     Q        Out     0.680     0.680       -         
+mem_wdata[28]                   Net         -        -       -         -           1         
+memory\[0\]_memory\[0\]_0_0     SP8KC       DI4      In      0.000     0.680       -         
+=============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

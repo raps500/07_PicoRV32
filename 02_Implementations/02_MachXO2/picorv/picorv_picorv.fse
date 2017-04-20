@@ -1,0 +1,30 @@
+
+fsm_encoding {61309113091} onehot
+
+fsm_state_encoding {61309113091} cpu_state_ldmem {0000001}
+
+fsm_state_encoding {61309113091} cpu_state_stmem {0000010}
+
+fsm_state_encoding {61309113091} cpu_state_shift {0000100}
+
+fsm_state_encoding {61309113091} cpu_state_exec {0001000}
+
+fsm_state_encoding {61309113091} cpu_state_ld_rs1 {0010000}
+
+fsm_state_encoding {61309113091} cpu_state_fetch {0100000}
+
+fsm_state_encoding {61309113091} cpu_state_trap {1000000}
+
+fsm_registers {61309113091} {cpu_state[6]}  {cpu_state[5]}  {cpu_state[4]}  {cpu_state[3]}  {cpu_state[2]}  {cpu_state[1]}  {cpu_state[0]} 
+
+fsm_encoding {653515352} sequential
+
+fsm_state_encoding {653515352} 00 {00}
+
+fsm_state_encoding {653515352} 01 {01}
+
+fsm_state_encoding {653515352} 10 {10}
+
+fsm_state_encoding {653515352} 11 {11}
+
+fsm_registers {653515352} {mem_state[1]}  {mem_state[0]} 

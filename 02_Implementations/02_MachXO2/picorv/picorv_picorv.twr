@@ -1,0 +1,1458 @@
+
+Loading design for application trce from file picorv_picorv.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.6_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 31.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.6.0.83.4
+Sat Apr 15 06:55:38 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o picorv_picorv.twr -gui picorv_picorv.ncd picorv_picorv.prf 
+Design file:     picorv_picorv.ncd
+Preference file: picorv_picorv.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 98.416000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 4.894ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_35  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              15.139ns  (44.7% logic, 55.3% route), 18 logic levels.
+
+ Constraint Details:
+
+     15.139ns physical path delay cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.894ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q0 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.483     R18C23C.Q0 to     R16C22B.C0 cpu/reg_op1f_0[3]
+C0TOFCO_DE  ---     1.023     R16C22B.C0 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOF0_DE  ---     0.585    R19C21B.FCI to     R19C21B.F0 cpu/SLICE_91
+ROUTE         3     2.192     R19C21B.F0 to EBR_R13C21.DI9 cpu/cpuregs_wrdata_4_cry_25_0_S0 (to clk_c)
+                  --------
+                   15.139   (44.7% logic, 55.3% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.812ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/reg_out_pipe_69  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              15.057ns  (41.8% logic, 58.2% route), 15 logic levels.
+
+ Constraint Details:
+
+     15.057ns physical path delay cpu/SLICE_701 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.812ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_701 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R16C31A.CLK to     R16C31A.Q0 cpu/SLICE_701 (from clk_c)
+ROUTE         1     1.887     R16C31A.Q0 to     R16C23A.D0 cpu/decoded_immf[9]
+C0TOFCO_DE  ---     1.023     R16C23A.D0 to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOF0_DE  ---     0.585    R19C21B.FCI to     R19C21B.F0 cpu/SLICE_91
+ROUTE         3     2.192     R19C21B.F0 to EBR_R13C21.DI9 cpu/cpuregs_wrdata_4_cry_25_0_S0 (to clk_c)
+                  --------
+                   15.057   (41.8% logic, 58.2% route), 15 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_701:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R16C31A.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.797ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_36  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              15.042ns  (44.1% logic, 55.9% route), 18 logic levels.
+
+ Constraint Details:
+
+     15.042ns physical path delay cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.797ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q1 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.520     R18C23C.Q1 to     R16C22B.C1 cpu/reg_op1f_0[4]
+C1TOFCO_DE  ---     0.889     R16C22B.C1 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOF0_DE  ---     0.585    R19C21B.FCI to     R19C21B.F0 cpu/SLICE_91
+ROUTE         3     2.192     R19C21B.F0 to EBR_R13C21.DI9 cpu/cpuregs_wrdata_4_cry_25_0_S0 (to clk_c)
+                  --------
+                   15.042   (44.1% logic, 55.9% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.701ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_35  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.946ns  (46.4% logic, 53.6% route), 19 logic levels.
+
+ Constraint Details:
+
+     14.946ns physical path delay cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.701ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q0 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.483     R18C23C.Q0 to     R16C22B.C0 cpu/reg_op1f_0[3]
+C0TOFCO_DE  ---     1.023     R16C22B.C0 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOFCO_D  ---     0.162    R19C21B.FCI to    R19C21B.FCO cpu/SLICE_91
+ROUTE         1     0.000    R19C21B.FCO to    R19C21C.FCI cpu/cpuregs_wrdata_4_cry_26
+FCITOF0_DE  ---     0.585    R19C21C.FCI to     R19C21C.F0 cpu/SLICE_90
+ROUTE         3     1.837     R19C21C.F0 to *R_R13C21.DI11 cpu/cpuregs_wrdata_4[29] (to clk_c)
+                  --------
+                   14.946   (46.4% logic, 53.6% route), 19 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.682ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_35  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.927ns  (44.9% logic, 55.1% route), 18 logic levels.
+
+ Constraint Details:
+
+     14.927ns physical path delay cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.682ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q0 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.483     R18C23C.Q0 to     R16C22B.C0 cpu/reg_op1f_0[3]
+C0TOFCO_DE  ---     1.023     R16C22B.C0 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOFCO_D  ---     0.162    R16C23B.FCI to    R16C23B.FCO cpu/SLICE_115
+ROUTE         1     0.000    R16C23B.FCO to    R16C23C.FCI cpu/reg_out_13_0_cry_10
+FCITOFCO_D  ---     0.162    R16C23C.FCI to    R16C23C.FCO cpu/SLICE_114
+ROUTE         1     0.000    R16C23C.FCO to    R16C23D.FCI cpu/reg_out_13_0_cry_12
+FCITOFCO_D  ---     0.162    R16C23D.FCI to    R16C23D.FCO cpu/SLICE_113
+ROUTE         1     0.000    R16C23D.FCO to    R16C24A.FCI cpu/reg_out_13_0_cry_14
+FCITOFCO_D  ---     0.162    R16C24A.FCI to    R16C24A.FCO cpu/SLICE_112
+ROUTE         1     0.000    R16C24A.FCO to    R16C24B.FCI cpu/reg_out_13_0_cry_16
+FCITOFCO_D  ---     0.162    R16C24B.FCI to    R16C24B.FCO cpu/SLICE_111
+ROUTE         1     0.000    R16C24B.FCO to    R16C24C.FCI cpu/reg_out_13_0_cry_18
+FCITOF1_DE  ---     0.643    R16C24C.FCI to     R16C24C.F1 cpu/SLICE_110
+ROUTE         1     1.079     R16C24C.F1 to     R16C21D.C1 cpu/N_1863
+CTOF_DEL    ---     0.495     R16C21D.C1 to     R16C21D.F1 cpu/SLICE_550
+ROUTE         2     0.967     R16C21D.F1 to     R16C18D.D0 cpu/reg_out[22]
+CTOF_DEL    ---     0.495     R16C18D.D0 to     R16C18D.F0 cpu/SLICE_570
+ROUTE         3     0.783     R16C18D.F0 to     R18C18D.C0 cpu/N_2685
+CTOF_DEL    ---     0.495     R18C18D.C0 to     R18C18D.F0 cpu/SLICE_923
+ROUTE         1     1.726     R18C18D.F0 to     R19C20C.A1 cpu/cpuregs_wrdata_4_axb_20
+C1TOFCO_DE  ---     0.889     R19C20C.A1 to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOF0_DE  ---     0.585    R19C21B.FCI to     R19C21B.F0 cpu/SLICE_91
+ROUTE         3     2.192     R19C21B.F0 to EBR_R13C21.DI9 cpu/cpuregs_wrdata_4_cry_25_0_S0 (to clk_c)
+                  --------
+                   14.927   (44.9% logic, 55.1% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.673ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/reg_out_pipe_3  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.918ns  (44.3% logic, 55.7% route), 17 logic levels.
+
+ Constraint Details:
+
+     14.918ns physical path delay cpu/SLICE_524 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.673ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_524 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R16C21A.CLK to     R16C21A.Q0 cpu/SLICE_524 (from clk_c)
+ROUTE        32     1.424     R16C21A.Q0 to     R16C22C.A0 cpu/reg_out_2_sqmuxaf
+C0TOFCO_DE  ---     1.023     R16C22C.A0 to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOF0_DE  ---     0.585    R19C21B.FCI to     R19C21B.F0 cpu/SLICE_91
+ROUTE         3     2.192     R19C21B.F0 to EBR_R13C21.DI9 cpu/cpuregs_wrdata_4_cry_25_0_S0 (to clk_c)
+                  --------
+                   14.918   (44.3% logic, 55.7% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_524:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R16C21A.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.664ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_35  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.909ns  (47.6% logic, 52.4% route), 20 logic levels.
+
+ Constraint Details:
+
+     14.909ns physical path delay cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.664ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q0 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.483     R18C23C.Q0 to     R16C22B.C0 cpu/reg_op1f_0[3]
+C0TOFCO_DE  ---     1.023     R16C22B.C0 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOFCO_D  ---     0.162    R19C21B.FCI to    R19C21B.FCO cpu/SLICE_91
+ROUTE         1     0.000    R19C21B.FCO to    R19C21C.FCI cpu/cpuregs_wrdata_4_cry_26
+FCITOFCO_D  ---     0.162    R19C21C.FCI to    R19C21C.FCO cpu/SLICE_90
+ROUTE         1     0.000    R19C21C.FCO to    R19C21D.FCI cpu/cpuregs_wrdata_4_cry_28
+FCITOF0_DE  ---     0.585    R19C21D.FCI to     R19C21D.F0 cpu/SLICE_89
+ROUTE         3     1.638     R19C21D.F0 to *R_R13C21.DI13 cpu/cpuregs_wrdata_4[31] (to clk_c)
+                  --------
+                   14.909   (47.6% logic, 52.4% route), 20 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.648ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_35  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.893ns  (47.0% logic, 53.0% route), 19 logic levels.
+
+ Constraint Details:
+
+     14.893ns physical path delay cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.648ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q0 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.483     R18C23C.Q0 to     R16C22B.C0 cpu/reg_op1f_0[3]
+C0TOFCO_DE  ---     1.023     R16C22B.C0 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOFCO_D  ---     0.162    R19C21B.FCI to    R19C21B.FCO cpu/SLICE_91
+ROUTE         1     0.000    R19C21B.FCO to    R19C21C.FCI cpu/cpuregs_wrdata_4_cry_26
+FCITOF1_DE  ---     0.643    R19C21C.FCI to     R19C21C.F1 cpu/SLICE_90
+ROUTE         3     1.726     R19C21C.F1 to *R_R13C21.DI12 cpu/cpuregs_wrdata_4[30] (to clk_c)
+                  --------
+                   14.893   (47.0% logic, 53.0% route), 19 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.637ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/genblk3.alu_add_sub_pipe_35  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_cpuregs_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.882ns  (47.7% logic, 52.3% route), 20 logic levels.
+
+ Constraint Details:
+
+     14.882ns physical path delay cpu/SLICE_3 to cpu/cpuregs_cpuregs_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.637ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_3 to cpu/cpuregs_cpuregs_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C23C.CLK to     R18C23C.Q0 cpu/SLICE_3 (from clk_c)
+ROUTE         2     1.483     R18C23C.Q0 to     R16C22B.C0 cpu/reg_op1f_0[3]
+C0TOFCO_DE  ---     1.023     R16C22B.C0 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOFCO_D  ---     0.162    R19C21B.FCI to    R19C21B.FCO cpu/SLICE_91
+ROUTE         1     0.000    R19C21B.FCO to    R19C21C.FCI cpu/cpuregs_wrdata_4_cry_26
+FCITOFCO_D  ---     0.162    R19C21C.FCI to    R19C21C.FCO cpu/SLICE_90
+ROUTE         1     0.000    R19C21C.FCO to    R19C21D.FCI cpu/cpuregs_wrdata_4_cry_28
+FCITOF0_DE  ---     0.585    R19C21D.FCI to     R19C21D.F0 cpu/SLICE_89
+ROUTE         3     1.611     R19C21D.F0 to *R_R20C21.DI13 cpu/cpuregs_wrdata_4[31] (to clk_c)
+                  --------
+                   14.882   (47.7% logic, 52.3% route), 20 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R18C23C.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_cpuregs_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R20C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 4.632ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/reg_out_pipe_64  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_1(ASIC)  (to clk_c +)
+
+   Delay:              14.877ns  (44.6% logic, 55.4% route), 18 logic levels.
+
+ Constraint Details:
+
+     14.877ns physical path delay cpu/SLICE_773 to cpu/cpuregs_1_cpuregs_1_0_1 exceeds
+     10.161ns delay constraint less
+     -0.173ns skew and
+      0.089ns DATA_SET requirement (totaling 10.245ns) by 4.632ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_773 to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R14C22D.CLK to     R14C22D.Q1 cpu/SLICE_773 (from clk_c)
+ROUTE         1     1.355     R14C22D.Q1 to     R16C22B.D1 cpu/decoded_immf[4]
+C1TOFCO_DE  ---     0.889     R16C22B.D1 to    R16C22B.FCO cpu/SLICE_119
+ROUTE         1     0.000    R16C22B.FCO to    R16C22C.FCI cpu/reg_out_13_0_cry_2
+FCITOFCO_D  ---     0.162    R16C22C.FCI to    R16C22C.FCO cpu/SLICE_118
+ROUTE         1     0.000    R16C22C.FCO to    R16C22D.FCI cpu/reg_out_13_0_cry_4
+FCITOFCO_D  ---     0.162    R16C22D.FCI to    R16C22D.FCO cpu/SLICE_117
+ROUTE         1     0.000    R16C22D.FCO to    R16C23A.FCI cpu/reg_out_13_0_cry_6
+FCITOFCO_D  ---     0.162    R16C23A.FCI to    R16C23A.FCO cpu/SLICE_116
+ROUTE         1     0.000    R16C23A.FCO to    R16C23B.FCI cpu/reg_out_13_0_cry_8
+FCITOF0_DE  ---     0.585    R16C23B.FCI to     R16C23B.F0 cpu/SLICE_115
+ROUTE         1     1.476     R16C23B.F0 to     R22C21B.D0 cpu/N_1852
+CTOF_DEL    ---     0.495     R22C21B.D0 to     R22C21B.F0 cpu/SLICE_545
+ROUTE         2     1.394     R22C21B.F0 to     R21C19B.D1 cpu/reg_out[11]
+CTOF_DEL    ---     0.495     R21C19B.D1 to     R21C19B.F1 cpu/SLICE_745
+ROUTE         2     0.445     R21C19B.F1 to     R21C19B.C0 cpu/N_1972
+CTOF_DEL    ---     0.495     R21C19B.C0 to     R21C19B.F0 cpu/SLICE_745
+ROUTE         1     1.376     R21C19B.F0 to     R19C19B.A0 cpu/cpuregs_wrdata_4_axb_9
+C0TOFCO_DE  ---     1.023     R19C19B.A0 to    R19C19B.FCO cpu/SLICE_99
+ROUTE         1     0.000    R19C19B.FCO to    R19C19C.FCI cpu/cpuregs_wrdata_4_cry_10
+FCITOFCO_D  ---     0.162    R19C19C.FCI to    R19C19C.FCO cpu/SLICE_98
+ROUTE         1     0.000    R19C19C.FCO to    R19C19D.FCI cpu/cpuregs_wrdata_4_cry_12
+FCITOFCO_D  ---     0.162    R19C19D.FCI to    R19C19D.FCO cpu/SLICE_97
+ROUTE         1     0.000    R19C19D.FCO to    R19C20A.FCI cpu/cpuregs_wrdata_4_cry_14
+FCITOFCO_D  ---     0.162    R19C20A.FCI to    R19C20A.FCO cpu/SLICE_96
+ROUTE         1     0.000    R19C20A.FCO to    R19C20B.FCI cpu/cpuregs_wrdata_4_cry_16
+FCITOFCO_D  ---     0.162    R19C20B.FCI to    R19C20B.FCO cpu/SLICE_95
+ROUTE         1     0.000    R19C20B.FCO to    R19C20C.FCI cpu/cpuregs_wrdata_4_cry_18
+FCITOFCO_D  ---     0.162    R19C20C.FCI to    R19C20C.FCO cpu/SLICE_94
+ROUTE         1     0.000    R19C20C.FCO to    R19C20D.FCI cpu/cpuregs_wrdata_4_cry_20
+FCITOFCO_D  ---     0.162    R19C20D.FCI to    R19C20D.FCO cpu/SLICE_93
+ROUTE         1     0.000    R19C20D.FCO to    R19C21A.FCI cpu/cpuregs_wrdata_4_cry_22
+FCITOFCO_D  ---     0.162    R19C21A.FCI to    R19C21A.FCO cpu/SLICE_92
+ROUTE         1     0.000    R19C21A.FCO to    R19C21B.FCI cpu/cpuregs_wrdata_4_cry_24
+FCITOF0_DE  ---     0.585    R19C21B.FCI to     R19C21B.F0 cpu/SLICE_91
+ROUTE         3     2.192     R19C21B.F0 to EBR_R13C21.DI9 cpu/cpuregs_wrdata_4_cry_25_0_S0 (to clk_c)
+                  --------
+                   14.877   (44.6% logic, 55.4% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_773:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.397       55.PADDI to    R14C22D.CLK clk_c
+                  --------
+                    2.397   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     2.570       55.PADDI to *R_R13C21.CLKW clk_c
+                  --------
+                    2.570   (0.0% logic, 100.0% route), 0 logic levels.
+
+Warning:  66.423MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 98.416000 MHz ;   |   98.416 MHz|   66.423 MHz|  18 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+cpu/cpuregs_wrdata_4_cry_24             |       1|    2991|     73.02%
+                                        |        |        |
+cpu/reg_out_13_0_cry_8                  |       1|    2938|     71.73%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_22             |       1|    2845|     69.46%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_20             |       1|    2554|     62.35%
+                                        |        |        |
+cpu/reg_out_13_0_cry_6                  |       1|    2528|     61.72%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_26             |       1|    2263|     55.25%
+                                        |        |        |
+cpu/reg_out_13_0_cry_4                  |       1|    2242|     54.74%
+                                        |        |        |
+cpu/reg_out_13_0_cry_12                 |       1|    2217|     54.13%
+                                        |        |        |
+cpu/reg_out_13_0_cry_10                 |       1|    2153|     52.56%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_18             |       1|    2143|     52.32%
+                                        |        |        |
+cpu/reg_out_13_0_cry_14                 |       1|    2098|     51.22%
+                                        |        |        |
+cpu/reg_out_13_0_cry_16                 |       1|    2075|     50.66%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_16             |       1|    1822|     44.48%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_14             |       1|    1790|     43.70%
+                                        |        |        |
+cpu/reg_out_13_0_cry_18                 |       1|    1695|     41.38%
+                                        |        |        |
+cpu/reg_out_13_0_cry_2                  |       1|    1668|     40.72%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_12             |       1|    1639|     40.01%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_10             |       1|    1593|     38.89%
+                                        |        |        |
+cpu/reg_out_13_0_cry_20                 |       1|    1091|     26.64%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_28             |       1|    1074|     26.22%
+                                        |        |        |
+cpu/cpuregs_wrdata_4[31]                |       3|    1074|     26.22%
+                                        |        |        |
+cpu/reg_out_2_sqmuxaf                   |      32|    1023|     24.98%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_25_0_S0        |       3|     755|     18.43%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_axb_9              |       1|     725|     17.70%
+                                        |        |        |
+cpu/reg_out[11]                         |       2|     725|     17.70%
+                                        |        |        |
+cpu/N_1972                              |       2|     725|     17.70%
+                                        |        |        |
+cpu/N_1852                              |       1|     681|     16.63%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_cry_8              |       1|     665|     16.24%
+                                        |        |        |
+cpu/cpuregs_wrdata_4[29]                |       3|     631|     15.41%
+                                        |        |        |
+cpu/reg_out_13_0_cry_22                 |       1|     618|     15.09%
+                                        |        |        |
+cpu/cpuregs_wrdata_4[30]                |       3|     600|     14.65%
+                                        |        |        |
+cpu/reg_out_13_0_cry_0                  |       1|     474|     11.57%
+                                        |        |        |
+cpu/cpuregs_wrdata_4_axb_20             |       1|     461|     11.25%
+                                        |        |        |
+cpu/reg_out[22]                         |       2|     461|     11.25%
+                                        |        |        |
+cpu/N_2685                              |       3|     461|     11.25%
+                                        |        |        |
+cpu/N_1863                              |       1|     455|     11.11%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 550
+   Covered under: FREQUENCY NET "clk_c" 98.416000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 14716770
+Cumulative negative slack: 14716770
+
+Constraints cover 121243 paths, 1 nets, and 8323 connections (99.90% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.6.0.83.4
+Sat Apr 15 06:55:39 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o picorv_picorv.twr -gui picorv_picorv.ncd picorv_picorv.prf 
+Design file:     picorv_picorv.ncd
+Preference file: picorv_picorv.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 98.416000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.138ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[19]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_9/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_9/RAM1
+
+   Delay:               0.269ns  (49.4% logic, 50.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.269ns physical path delay cpu/SLICE_664 to memory[0]_ram_9/SLICE_241 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.138ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_664 to memory[0]_ram_9/SLICE_241:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R11C27A.CLK to     R11C27A.Q1 cpu/SLICE_664 (from clk_c)
+ROUTE         8     0.136     R11C27A.Q1 to     R12C27C.D1 mem_wdata[19]
+ZERO_DEL    ---     0.000     R12C27C.D1 to   R12C27C.WDO3 memory[0]_ram_9/SLICE_239
+ROUTE         1     0.000   R12C27C.WDO3 to    R12C27B.WD1 memory[0]_ram_9/WD3_INT (to clk_c)
+                  --------
+                    0.269   (49.4% logic, 50.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_664:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R11C27A.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_9/SLICE_241:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R12C27B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.224ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[19]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_1/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_1/RAM1
+
+   Delay:               0.355ns  (37.5% logic, 62.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.355ns physical path delay cpu/SLICE_664 to memory[0]_ram_1/SLICE_265 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.224ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_664 to memory[0]_ram_1/SLICE_265:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R11C27A.CLK to     R11C27A.Q1 cpu/SLICE_664 (from clk_c)
+ROUTE         8     0.222     R11C27A.Q1 to     R10C26C.D1 mem_wdata[19]
+ZERO_DEL    ---     0.000     R10C26C.D1 to   R10C26C.WDO3 memory[0]_ram_1/SLICE_263
+ROUTE         1     0.000   R10C26C.WDO3 to    R10C26B.WD1 memory[0]_ram_1/WD3_INT (to clk_c)
+                  --------
+                    0.355   (37.5% logic, 62.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_664:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R11C27A.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_1/SLICE_265:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R10C26B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.227ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[17]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_9/RAM0  (to clk_c +)
+                   FF                        memory[0]_ram_9/RAM0
+
+   Delay:               0.358ns  (37.2% logic, 62.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.358ns physical path delay cpu/SLICE_663 to memory[0]_ram_9/SLICE_240 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.227ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_663 to memory[0]_ram_9/SLICE_240:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R12C26D.CLK to     R12C26D.Q1 cpu/SLICE_663 (from clk_c)
+ROUTE         8     0.225     R12C26D.Q1 to     R12C27C.B1 mem_wdata[17]
+ZERO_DEL    ---     0.000     R12C27C.B1 to   R12C27C.WDO1 memory[0]_ram_9/SLICE_239
+ROUTE         1     0.000   R12C27C.WDO1 to    R12C27A.WD1 memory[0]_ram_9/WD1_INT (to clk_c)
+                  --------
+                    0.358   (37.2% logic, 62.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_663:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R12C26D.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_9/SLICE_240:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R12C27A.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.231ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[19]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram/RAM1
+
+   Delay:               0.362ns  (36.7% logic, 63.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.362ns physical path delay cpu/SLICE_664 to SLICE_127 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.231ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_664 to SLICE_127:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R11C27A.CLK to     R11C27A.Q1 cpu/SLICE_664 (from clk_c)
+ROUTE         8     0.229     R11C27A.Q1 to      R8C27C.D1 mem_wdata[19]
+ZERO_DEL    ---     0.000      R8C27C.D1 to    R8C27C.WDO3 memory[0]_ram/SLICE_125
+ROUTE         1     0.000    R8C27C.WDO3 to     R8C27B.WD1 memory[0]_ram/WD3_INT (to clk_c)
+                  --------
+                    0.362   (36.7% logic, 63.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_664:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R11C27A.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to SLICE_127:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to     R8C27B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.231ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[19]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_3/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_3/RAM1
+
+   Delay:               0.362ns  (36.7% logic, 63.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.362ns physical path delay cpu/SLICE_664 to memory[0]_ram_3/SLICE_259 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.231ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_664 to memory[0]_ram_3/SLICE_259:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R11C27A.CLK to     R11C27A.Q1 cpu/SLICE_664 (from clk_c)
+ROUTE         8     0.229     R11C27A.Q1 to      R9C27C.D1 mem_wdata[19]
+ZERO_DEL    ---     0.000      R9C27C.D1 to    R9C27C.WDO3 memory[0]_ram_3/SLICE_257
+ROUTE         1     0.000    R9C27C.WDO3 to     R9C27B.WD1 memory[0]_ram_3/WD3_INT (to clk_c)
+                  --------
+                    0.362   (36.7% logic, 63.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_664:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R11C27A.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_3/SLICE_259:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to     R9C27B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.256ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[18]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_9/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_9/RAM1
+
+   Delay:               0.387ns  (34.4% logic, 65.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.387ns physical path delay cpu/SLICE_664 to memory[0]_ram_9/SLICE_241 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.256ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_664 to memory[0]_ram_9/SLICE_241:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R11C27A.CLK to     R11C27A.Q0 cpu/SLICE_664 (from clk_c)
+ROUTE         8     0.254     R11C27A.Q0 to     R12C27C.C1 mem_wdata[18]
+ZERO_DEL    ---     0.000     R12C27C.C1 to   R12C27C.WDO2 memory[0]_ram_9/SLICE_239
+ROUTE         1     0.000   R12C27C.WDO2 to    R12C27B.WD0 memory[0]_ram_9/WD2_INT (to clk_c)
+                  --------
+                    0.387   (34.4% logic, 65.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_664:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R11C27A.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_9/SLICE_241:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R12C27B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.288ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/latched_rd[0]  (from clk_c +)
+   Destination:    PDPW8KC    Port           cpu/cpuregs_1_cpuregs_1_0_0(ASIC)  (to clk_c +)
+
+   Delay:               0.394ns  (33.8% logic, 66.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.394ns physical path delay cpu/SLICE_405 to cpu/cpuregs_1_cpuregs_1_0_0 meets
+      0.052ns ADDR_HLD and
+      0.000ns delay constraint less
+     -0.054ns skew requirement (totaling 0.106ns) by 0.288ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_405 to cpu/cpuregs_1_cpuregs_1_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R18C27C.CLK to     R18C27C.Q0 cpu/SLICE_405 (from clk_c)
+ROUTE         6     0.261     R18C27C.Q0 to *R_R20C24.ADW0 cpu/latched_rd[0] (to clk_c)
+                  --------
+                    0.394   (33.8% logic, 66.2% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_405:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R18C27C.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to cpu/cpuregs_1_cpuregs_1_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.920       55.PADDI to *R_R20C24.CLKW clk_c
+                  --------
+                    0.920   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.335ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[22]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_12/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_12/RAM1
+
+   Delay:               0.466ns  (28.5% logic, 71.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.466ns physical path delay cpu/SLICE_666 to memory[0]_ram_12/SLICE_232 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.335ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_666 to memory[0]_ram_12/SLICE_232:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R12C25D.CLK to     R12C25D.Q0 cpu/SLICE_666 (from clk_c)
+ROUTE         8     0.333     R12C25D.Q0 to      R7C25C.C1 mem_wdata[22]
+ZERO_DEL    ---     0.000      R7C25C.C1 to    R7C25C.WDO2 memory[0]_ram_12/SLICE_230
+ROUTE         1     0.000    R7C25C.WDO2 to     R7C25B.WD0 memory[0]_ram_12/WD2_INT (to clk_c)
+                  --------
+                    0.466   (28.5% logic, 71.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_666:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R12C25D.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_12/SLICE_232:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to     R7C25B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.336ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[14]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_18/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_18/RAM1
+
+   Delay:               0.467ns  (28.5% logic, 71.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.467ns physical path delay cpu/SLICE_662 to memory[0]_ram_18/SLICE_214 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.336ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_662 to memory[0]_ram_18/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R12C23D.CLK to     R12C23D.Q0 cpu/SLICE_662 (from clk_c)
+ROUTE         8     0.334     R12C23D.Q0 to     R10C23C.C1 mem_wdata[14]
+ZERO_DEL    ---     0.000     R10C23C.C1 to   R10C23C.WDO2 memory[0]_ram_18/SLICE_212
+ROUTE         1     0.000   R10C23C.WDO2 to    R10C23B.WD0 memory[0]_ram_18/WD2_INT (to clk_c)
+                  --------
+                    0.467   (28.5% logic, 71.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_662:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R12C23D.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_18/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R10C23B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.336ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cpu/mem_wdata[19]  (from clk_c +)
+   Destination:    FF         Data in        memory[0]_ram_7/RAM1  (to clk_c +)
+                   FF                        memory[0]_ram_7/RAM1
+
+   Delay:               0.467ns  (28.5% logic, 71.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.467ns physical path delay cpu/SLICE_664 to memory[0]_ram_7/SLICE_247 meets
+      0.131ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.131ns) by 0.336ns
+
+ Physical Path Details:
+
+      Data path cpu/SLICE_664 to memory[0]_ram_7/SLICE_247:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R11C27A.CLK to     R11C27A.Q1 cpu/SLICE_664 (from clk_c)
+ROUTE         8     0.334     R11C27A.Q1 to      R8C26C.D1 mem_wdata[19]
+ZERO_DEL    ---     0.000      R8C26C.D1 to    R8C26C.WDO3 memory[0]_ram_7/SLICE_245
+ROUTE         1     0.000    R8C26C.WDO3 to     R8C26B.WD1 memory[0]_ram_7/WD3_INT (to clk_c)
+                  --------
+                    0.467   (28.5% logic, 71.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path clk to cpu/SLICE_664:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to    R11C27A.CLK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path clk to memory[0]_ram_7/SLICE_247:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       550     0.866       55.PADDI to     R8C26B.WCK clk_c
+                  --------
+                    0.866   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 98.416000 MHz ;   |     0.000 ns|     0.138 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 550
+   Covered under: FREQUENCY NET "clk_c" 98.416000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 121243 paths, 1 nets, and 8323 connections (99.90% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 14716770 (setup), 0 (hold)
+Cumulative negative slack: 14716770 (14716770+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

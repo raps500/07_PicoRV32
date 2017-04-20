@@ -1,0 +1,34 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: MO225 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":535:1:535:6|No possible illegal states for state machine mem_state[3:0],safe FSM implementation is disabled
+@N: MF179 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1290:1:1290:6|Found 5 bit by 5 bit '==' comparator, 'adreg'
+@N: MF179 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1290:1:1290:6|Found 5 bit by 5 bit '==' comparator, 'adreg'
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":826:1:826:6|Removing sequential instance instr_sw in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+@N: MF179 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1191:13:1191:31|Found 32 bit by 32 bit '==' comparator, 'genblk3\.alu_eq_2'
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":826:1:826:6|Removing sequential instance instr_lw in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Removing sequential instance latched_is_lu in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":826:1:826:6|Removing sequential instance is_lbu_lhu_lw of view:PrimLib.dff(prim) in hierarchy view:work.picorv32_Z1(verilog) because there are no references to its outputs 
+@N: FA113 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1862:2:1862:3|Pipelining module un1_decoded_imm_uj_1[30:0]
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register reg_next_pc[31:2] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register reg_pc[31:2] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register reg_out[31:0] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register cpu_state[6:0] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register alu_out_q[31:0] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register latched_stalu pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":535:1:535:6|Register mem_addr pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register reg_op1[31:0] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":826:1:826:6|Register decoded_imm[31:0] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1290:1:1290:6|Register cpuregs[31:0] pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Register latched_branch pushed in.
+@N: MF169 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1189:2:1189:7|Register alu_add_sub pushed in.
+@N: FX404 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1271:22:1271:54|Found addmux in view:work.top(verilog) inst cpu.cpuregs_wrdata_4[29:0] from cpu.un1_cpuregs_wrdata[31:2] 
+@N: FX404 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1719:15:1719:35|Found addmux in view:work.top(verilog) inst cpu.reg_out_13_0[31:2] from cpu.un1_reg_out[31:2] 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FO126 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Generating RAM memory\[0\][23:16]
+@N: FO126 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Generating RAM memory\[0\][15:8]
+@N: FO126 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\scripts\icestorm\example.v":57:1:57:6|Generating RAM memory\[0\][7:0]
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
