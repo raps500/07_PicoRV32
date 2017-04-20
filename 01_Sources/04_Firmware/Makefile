@@ -8,7 +8,7 @@ LD = /opt/riscv32i/bin/riscv32-unknown-elf-ld
 OBJDUMP = /opt/riscv32i/bin/riscv32-unknown-elf-objdump
 OBJCOPY = /opt/riscv32i/bin/riscv32-unknown-elf-objcopy
 INC = -I.
-OPTS = -Os -march=rv32im 
+OPTS = -Os -march=rv32im -g
 LD_OPTS_BOOTLOADER = -T sections_boot.lds -nostdlib
 LD_OPTS = -T sections.lds -nostdlib
 PYTHON = python3
@@ -40,6 +40,6 @@ clean:
 
 user_app.elf: start.o user_app.o print.o
 	$(LD) $(LD_OPTS) start.o print.o user_app.o -o user_app.elf
-	$(OBJCOPY) -O binary user_app.elf user_app.bin
+	$(OBJCOPY) -O ihex user_app.elf user_app.hex
 	$(OBJDUMP) -d user_app.elf >user_app.s.txt
 

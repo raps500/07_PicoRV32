@@ -12,5 +12,4 @@ int main (void)
         temp = PORTA;
         PORTA = temp;
     }
-    
 }

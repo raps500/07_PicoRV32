@@ -67,11 +67,11 @@ module uart_rx  #(
     reg [3:0]   bitCount;
     reg [2:0]   clkCount;
     reg [15:0]  bitTimer;
-    reg         bufferEmpty;          // TRUE when ready to accept next character.
-    reg         rdy;
+    reg         bufferFull;          // TRUE when ready to accept next character.
+    reg         rdy, old_rdy;
     reg         old_serial_in;
     reg         old2_serial_in;
-    reg         started;
+    reg         started, old_started;
     reg         bit_clock;
     
     assign bit_clock_o = bit_clock;
@@ -79,20 +79,27 @@ module uart_rx  #(
     // UART RX Logic
     always @ (posedge clk or negedge resetn) begin
         if (!resetn) begin
-            bufferEmpty <= 1'b1; // empty
-            bitTimer    <= 0;
-            rdy         <= 0;
-            bit_clock   <= 0;
+            bufferFull  <= 1'b0; // empty
+            bitTimer    <= 1'b0;
+            rdy         <= 1'b0;
+            old_rdy     <= 1'b0;
+            bit_clock   <= 1'b0;
+            old_started <= 1'b0;
         end else begin
-            if (mem_valid & enable) begin
-                if  ((|mem_wstrb == 1'b0) && (bufferEmpty == 1'b0)) begin
-                    bufferEmpty <= 1'b1;
+            if (mem_valid & enable) 
+                begin
+                    if (|mem_wstrb == 1'b0)
+                        rdy <= 1;
+                end 
+            else 
+                begin
+                    rdy <= 0;
                 end
-                rdy <= 1;
-            end else begin
-                rdy <= 0;
-            end
-            
+            old_rdy <= rdy;
+            if  ((old_rdy == 1'b1) && (rdy == 1'b0)) 
+                begin
+                    bufferFull <= 1'b0;// ensures that at least one access sees that the buffer is full
+                end
             // Generate bit clock timer for 115200 baud from 50MHz clock
             if (bitTimer == BAUD_DIVIDER / 2)
                 begin
@@ -101,9 +108,10 @@ module uart_rx  #(
                 end
             else
                 bitTimer <= bitTimer + 1;
-
-            if ((state == 2'd2) && (started == 1'b0))
-                bufferEmpty <= 1'b0; // received
+            old_started <= started;
+            
+            if ((old_started == 1'd1) && (started == 1'b0))
+                bufferFull <= 1'b1; // received
         end
     end
     
@@ -156,12 +164,7 @@ module uart_rx  #(
                             end
                         2'd2 : begin // stop bit
                                 buffer <= shifter;
-                                //if (clkCount == 3'h0)
-                                //   begin
-                                        started <= 1'b0;
-                                //  end
-                                //else
-                                //    clkCount <= clkCount - 3'd1;
+                                started <= 1'b0;
                             end
                         default : ;
                     endcase
@@ -170,7 +173,7 @@ module uart_rx  #(
 
 
     // Tri-state the bus outputs.
-    assign mem_rdata = enable ? { bufferEmpty, buffer } : 'b0;
+    assign mem_rdata = enable ? { bufferFull, buffer } : 'b0;
     assign mem_ready = rdy;
 initial
     started = 0;

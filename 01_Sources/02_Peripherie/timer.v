@@ -19,7 +19,7 @@ module timer (
     reg [31:0] timers [1:0];
     reg rdy;
 
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         if (!resetn) begin
             rdy <= 0;
             timers[0] <= 32'h0;

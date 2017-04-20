@@ -1,1 +1,0 @@
-@W: MT529 :"c:\02_elektronik\044_riscv\07_picorv\01_sources\picorv32\picorv32.v":1309:1:1309:6|Found inferred clock top|clk which controls 625 sequential elements including cpu.reg_next_pc[31:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

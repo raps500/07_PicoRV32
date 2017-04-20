@@ -61,7 +61,7 @@ module memory (
 	.byteena(mem_wstrb),
 	.clock(clk),
 	.data(mem_wdata),
-	.wren(|mem_wstrb),
+	.wren(mem_valid & enable & (|mem_wstrb)),
 	.q(q));
     
     always @(posedge clk) 

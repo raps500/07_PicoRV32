@@ -2,12 +2,12 @@
 <BaliProject version="3.2" title="picorv" device="LCMXO2-7000HE-4TG144C" default_implementation="picorv">
     <Options/>
     <Implementation title="picorv" dir="picorv" description="picorv" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="top"/>
+        <Options def_top="top" top="top"/>
         <Source name="../../01_Sources/picorv32/picorv32.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="../../01_Sources/picorv32/scripts/icestorm/example.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="top"/>
         </Source>
         <Source name="picorv.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
