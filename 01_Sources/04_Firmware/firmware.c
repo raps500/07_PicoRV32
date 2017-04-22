@@ -48,11 +48,10 @@ uint8_t receiveIHex(void)
 {
     uint8_t ch, end_flag, len, record_len, record_type, data, chk, rchk;
     uint8_t state = 0;
-    uint32_t addr, rxd, idx, bytes_cnt;
+    uint32_t addr, rxd, bytes_cnt;
     uint8_t *ptr;
     
     end_flag = 0;
-    idx = 16;
     ptr = (uint8_t *) 0x4000;
     bytes_cnt = 0;
     chk = 0;
@@ -65,7 +64,7 @@ uint8_t receiveIHex(void)
             rxd = UARTRX;
         }
         ch = rxd & 255;
-        ptr[idx++] = ch;
+
         switch(state)
         {
             case 0: switch (ch)
