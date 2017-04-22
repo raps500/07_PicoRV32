@@ -40,7 +40,7 @@
 //`include "timescale.vh"
 
 module uart_rx  #(
-    parameter [31:0] BAUD_DIVIDER = 54 //868   // 100MHz / 115200 baud
+    parameter [31:0] BAUD_DIVIDER = 3 //108    // 50MHz / 57600 baud
 ) (
     // Bus interface
     input  wire        clk,
@@ -73,6 +73,7 @@ module uart_rx  #(
     reg         old2_serial_in;
     reg         started, old_started;
     reg         bit_clock;
+    reg         bufferFull_pending;
     
     assign bit_clock_o = bit_clock;
     
@@ -85,6 +86,7 @@ module uart_rx  #(
             old_rdy     <= 1'b0;
             bit_clock   <= 1'b0;
             old_started <= 1'b0;
+            bufferFull_pending <= 1'b0;
         end else begin
             if (mem_valid & enable) 
                 begin
@@ -101,7 +103,7 @@ module uart_rx  #(
                     bufferFull <= 1'b0;// ensures that at least one access sees that the buffer is full
                 end
             // Generate bit clock timer for 115200 baud from 50MHz clock
-            if (bitTimer == BAUD_DIVIDER / 2)
+            if (bitTimer == BAUD_DIVIDER)
                 begin
                     bitTimer <= 'h0;
                     bit_clock <= ~bit_clock;
@@ -111,7 +113,17 @@ module uart_rx  #(
             old_started <= started;
             
             if ((old_started == 1'd1) && (started == 1'b0))
-                bufferFull <= 1'b1; // received
+                begin
+                    if (enable)
+                        bufferFull_pending <= 1'b1; // delay seeting this bit, avoids the cpu getting unsettled data
+                    else
+                        bufferFull <= 1'b1; // received
+                end
+            if (bufferFull_pending && (~enable )) // delay setting bufferFull till current access is over
+                begin
+                    bufferFull_pending <= 1'b0;
+                    bufferFull <= 1'b1;
+                end
         end
     end
     

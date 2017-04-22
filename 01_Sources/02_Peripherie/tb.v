@@ -54,30 +54,22 @@ initial
         #`BITTIME
         serial = 0;
         #`BITTIME
-        serial = 0;
-        #`BITTIME
-        serial = 0;
-        #`BITTIME
-        serial = 0;
+        serial = 1;
         #`BITTIME
         serial = 0;
         #`BITTIME
         serial = 1;
-        
-        //#`BITTIME
-        //#`BITTIME
-        // enable = 1;
-        //mem_valid = 1;
-        //#13
-        //enable = 0;
-        //mem_valid = 0;
-        //#`BITTIME
-        //#`BITTIME
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1; // stop bit
         #`BITTIME
         serial = 0; // start bit
         #`BITTIME
         serial = 0; // lsb
         #`BITTIME
+        serial = 1;
+        #`BITTIME
         serial = 0;
         #`BITTIME
         serial = 0;
@@ -86,27 +78,56 @@ initial
         #`BITTIME
         serial = 0;
         #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1; // stop bit
+        #`BITTIME
+        serial = 0; // start bit
+        #`BITTIME
+        serial = 1; // lsb
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
         serial = 0;
         #`BITTIME
         serial = 0;
         #`BITTIME
         serial = 1;
         #`BITTIME
+        serial = 0;
+        #`BITTIME
         serial = 1;
         #`BITTIME
+        serial = 0;
         #`BITTIME
-         enable = 1;
-        mem_valid = 1;
-        #13
-        enable = 0;
-        mem_valid = 0;
-        #`BITTIME
-        #`BITTIME
+        serial = 1;
         #`BITTIME
         serial = 0; // start bit
         #`BITTIME
         serial = 0; // lsb
         #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0; // start bit
+        #`BITTIME
+        serial = 1; // lsb
+        #`BITTIME
         serial = 0;
         #`BITTIME
         serial = 0;
@@ -119,13 +140,36 @@ initial
         #`BITTIME
         serial = 1;
         #`BITTIME
-        serial = 1;
+        serial = 0;
         #`BITTIME
         serial = 1;
         #`BITTIME
+        serial = 0; // start bit
+        #`BITTIME
+        serial = 0; // lsb
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+        serial = 0;
+        #`BITTIME
+        serial = 1;
+        #`BITTIME
+
+
         #`BITTIME
         #`BITTIME
-        
+        #`BITTIME
+        #`BITTIME
 		$finish;
 	end
 

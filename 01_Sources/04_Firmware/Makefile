@@ -36,7 +36,7 @@ firmware_start.o: firmware_start.S
 	$(CC) $(OPTS) $(INC) firmware_start.S -c
     
 clean:
-	rm *.hex *.o *.elf
+	rm *.hex *.o *.elf *.mif
 
 user_app.elf: start.o user_app.o print.o
 	$(LD) $(LD_OPTS) start.o print.o user_app.o -o user_app.elf

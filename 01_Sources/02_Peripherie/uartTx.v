@@ -9,7 +9,7 @@
 `include "timescale.vh"
 
 module uartTx  #(
-    parameter [31:0] BAUD_DIVIDER = 434 //868   // 100MHz / 115200 baud
+    parameter [31:0] BAUD_DIVIDER = 64 //555 //868//434 //868   // 100MHz / 115200 baud
 ) (
     // Bus interface
     input  wire        clk,

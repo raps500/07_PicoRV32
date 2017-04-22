@@ -43,17 +43,19 @@ uint8_t receiveFrame(uint8_t *buffer, uint32_t buffer_size)
 }
 
 #define TO_DEC(x) ( (x) >= 'A' ? ((x) - 55):((x) - 48) )
-
-void receiveIHex(void)
+#define IS_HEX(x) ((((x) >= 'A') && ((x) <= 'F')) || (((x) >= '0') && ((x) <= '9')))
+uint8_t receiveIHex(void)
 {
-    uint8_t ch, chk, end_flag, len, record_len, record_type, data;
+    uint8_t ch, end_flag, len, record_len, record_type, data, chk, rchk;
     uint8_t state = 0;
-    uint32_t addr, rxd, idx;
+    uint32_t addr, rxd, idx, bytes_cnt;
     uint8_t *ptr;
-    end_flag = 0;
-    idx = 0;
-    ptr = (uint8_t *) 0x4000;
     
+    end_flag = 0;
+    idx = 16;
+    ptr = (uint8_t *) 0x4000;
+    bytes_cnt = 0;
+    chk = 0;
     while (end_flag == 0) 
     {
         rxd = UARTRX;
@@ -63,12 +65,20 @@ void receiveIHex(void)
             rxd = UARTRX;
         }
         ch = rxd & 255;
+        ptr[idx++] = ch;
         switch(state)
         {
-            case 0: if (ch == ':') 
+            case 0: switch (ch)
                     {
-                        state = 1; // get record len
-                        TOGGLELED
+                        case ':':
+                        {
+                            state = 1; // get record len
+                        }
+                        break;
+                        case 10: case 13: // ignore
+                        break;
+                        default:
+                            end_flag = 2;
                     }
                     len = 0;
                     addr = 0;
@@ -76,77 +86,106 @@ void receiveIHex(void)
                     chk = 0;
                     record_type = 0;
                     data = 0;
+                    rchk = 0; // received checksum
                 break;
-            case 1: 
-                record_len = (record_len << 4) | TO_DEC(ch);
-                if (len == 1)
+            case 1:
+                if (IS_HEX(ch))
                 {
-                    len = 0;
-                    state = 2;
-                    TOGGLELED
+                    record_len = (record_len << 4) | TO_DEC(ch);
+                    if (len == 1)
+                    {
+                        len = 0;
+                        state++;
+                        chk = record_len;
+                    }
+                    else
+                        len++;
                 }
                 else
-                    len++;
+                    end_flag = 2;
                 break;
             case 2: 
-                addr = (addr << 4) | TO_DEC(ch);
-                if (len == 3)
+                if (IS_HEX(ch))
                 {
-                    len = 0;
-                    state = 3;
-                    addr -= 0x4000;
-                    TOGGLELED
+                    addr = (addr << 4) | TO_DEC(ch);
+                    if (len == 3)
+                    {
+                        len = 0;
+                        state++;
+                        chk += (addr >> 8);
+                        chk += addr & 255;
+                        addr -= 0x4000;
+                    }
+                    else
+                        len++;
                 }
                 else
-                    len++;
+                    end_flag = 2; 
                 break;
             case 3: // receive record type
-                record_type = (record_type << 4) | TO_DEC(ch);
-                if (len == 1)
+                if (IS_HEX(ch))
                 {
-                    len = 0;
-                    if (record_type == 0x01)
-                        state = 5; // get checksum
+                    record_type = (record_type << 4) | TO_DEC(ch);
+                    if (len == 1)
+                    {
+                        len = 0;
+                        if (record_type == 0x01)
+                            state = 5; // get checksum
+                        else
+                            state++;
+                        chk += record_type;
+                    }
                     else
-                        state = 4;
-                    TOGGLELED
+                        len++;
                 }
                 else
-                    len++;
+                    end_flag = 2;
                 break;
             case 4: // get data
-                data = (data << 4) | TO_DEC(ch);
-                if (len == 1)
+                if (IS_HEX(ch))
                 {
-                    len = 0;
-                    ptr[addr++] = data;
-                    if (record_len == 1)
-                        state = 5; // get checksum
+                    data = (data << 4) | TO_DEC(ch);
+                    if (len == 1)
+                    {
+                        len = 0;
+                        ptr[addr++] = data;
+                        if (record_len == 1)
+                            state++; // get checksum
+                        else
+                            record_len--;
+                        bytes_cnt++;
+                        chk += data;
+                        data = 0;
+                    }
                     else
-                        record_len--;
-                    idx++;
-                    data = 0;
-                    TOGGLELED
+                        len++;
                 }
                 else
-                    len++;
+                    end_flag = 2;
                 break;
             case 5:
-                TOGGLELED
-                chk = (chk << 4) | TO_DEC(ch);
-                if (len == 1)
+                if (IS_HEX(ch))
                 {
-                    len = 0;
-                    if (record_type == 0x01)
-                        end_flag = 1; // end of file reached
+                    rchk = (rchk << 4) | TO_DEC(ch);
+                    if (len == 1)
+                    {
+                        len = 0;
+                        if (record_type == 0x01)
+                            end_flag = 1; // end of file reached
+                        else
+                            state = 0;
+                        chk += rchk;
+                        if (chk != 0)
+                            end_flag = 3;
+                    }
                     else
-                        state = 0;
+                        len++;
                 }
                 else
-                    len++;
+                    end_flag = 2;
                 break;
         }
-        
+        /*
         print_str("State: "); print_dec(state); print_str("\r\n");
         print_str("RLen: "); print_dec(record_len); print_str("\r\n");
         print_str("Addr: "); print_dec(addr); print_str("\r\n");
@@ -156,10 +195,25 @@ void receiveIHex(void)
         print_str("Len: "); print_dec(len); print_str("\r\n");
         
         print_str("\r\n");
-        
+        */
     }
-    print_str("Received: "); print_dec(idx); print_str(" bytes.\r\n");
-    
+    switch (end_flag)
+    {
+        case 1: 
+            print_str("Received: "); print_dec(bytes_cnt); print_str(" bytes.\r\n");
+            break;
+        case 2:
+            print_str("Aborted. Received invalid char: "); 
+            print_dec(ch); print_str("(dec) at state: ");
+            print_dec(state); print_str("(dec).\r\n");
+            break;
+        case 3:
+            print_str("Aborted. Invalid checksum received : 0x"); 
+            print_hex(rchk, 2); print_str(".\r\n");
+            break;
+    }
+        
+    return end_flag;
 }
 // Dumps 512 bytes of buffer
 void dump_buffer(uint8_t *ptr)
@@ -186,6 +240,8 @@ int main (void)
     volatile uint32_t temp;
     int32_t j, i;
     uint8_t *ptr;
+    uint8_t flag;
+    
     void (*user_app)(void);
     
     print_str("RISCV32IM up and running\r\n");
@@ -212,14 +268,17 @@ int main (void)
         
     ptr = (uint8_t *) 0x4000; // start of user RAM
     print_str("Zeroing buffer...\r\n");
-    for (i = 0; i < ((128-16)*1024); i++)
+    for (i = 0; i < ((64-16)*1024); i++)
         ptr[i] = 0;
     
+    do
+    {
+        print_str("Wait for iHex...\r\n");
     
-    print_str("Wait for binary...\r\n");
-    //receiveFrame(ptr, (128-16)*1024);
-    receiveIHex();
-    dump_buffer((uint8_t *)0x4000);
+        flag = receiveIHex();
+        dump_buffer((uint8_t *)0x4000);
+    } while (flag != 1);
+    
     print_str("Executing...\r\n");
     user_app = (void (*)(void)) 0x4000;
     
