@@ -17,7 +17,16 @@ module prv32_top (
     input wire           UART_RX,
     output wire          audio_test_out,
     output wire          bit_clock,
-    output wire [3:0]    RND_OUT
+    output wire [3:0]    RND_OUT,
+    
+    output wire          audio_left_o,
+    output wire          audio_right_o,
+    
+    output wire  [3:0]   green_o,
+    output wire  [3:0]   red_o,
+    output wire  [3:0]   blue_o,
+    output wire          hsync_o,
+    output wire          vsync_o
     
     );
 
@@ -37,14 +46,16 @@ module prv32_top (
     wire [31:0] mem_rdata_uart_tx;
     wire [31:0] mem_rdata_uart_rx;
     wire [31:0] mem_rdata_timer;
+    wire [31:0] mem_rdata_audio;
+    wire [31:0] mem_rdata_video;
     
     wire        mem_ready_mem;
     wire        mem_ready_gpio;
     wire        mem_ready_uart_tx;
     wire        mem_ready_uart_rx;
     wire        mem_ready_timer;
-    
-
+    wire        mem_ready_audio;
+    wire        mem_ready_video;
     
     // Look-Ahead Interface
     wire        mem_la_read;
@@ -74,14 +85,24 @@ module prv32_top (
     wire [35:0] trace_data;
 
     // Peripheral enables
-    wire [7:0] enables;
+    wire enable_audio_ctrl;
+    wire enable_video_ctrl;
+    wire enable_spi;
+    wire enable_timers;
+    wire enable_uart_tx;
+    wire enable_uart_rx;
+    wire enable_gpio;
+    wire enable_audio_ram;
+    wire enable_video_ram;
+    wire enable_sdram;
+    wire enable_sram;
 
     reg resetn = 0;
     reg [7:0] resetCount = 0;
 
     wire CLOCK_100;
     wire CLOCK_100_SHIFTED;
-    wire CLOCK_10;
+    wire pixel_clock;
     wire CLOCK_LOCKED;
 
     always @(posedge CLOCK_100)
@@ -104,10 +125,10 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
     // Generate 100MHz and 10MHz clocks
     // See Quartus PLL tutorial here: http://www.emb4fun.de/fpga/nutos1/
     pll_sys pll_sys_inst (
-        .inclk0 (CLOCK_50),      // The input clok
+        .inclk0 (CLOCK_50),      // The input clock
         .c0 (CLOCK_100),         // 100MHz clock
-        .c1 (CLOCK_100_SHIFTED), // 100MHz clock with phase shift of -54 degrees
-        .c2 (CLOCK_10),          // 10MHz clock
+        .c1 (CLOCK_100_SHIFTED), // 100MHz clock with phase shift of -54 degrees for SDRAM
+        .c2 (pixel_clock),       // 40MHz pixel clock
         .locked (CLOCK_LOCKED)   // PLL is locked signal
     );
 `else
@@ -116,7 +137,7 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
 
     memory mem (
         .clk(CLOCK_100),
-        .enable(enables[7]),
+        .enable(enable_sram),
         .mem_valid(mem_valid),
         .mem_ready(mem_ready_mem),
         .mem_instr(mem_instr),
@@ -129,7 +150,7 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
     gpio gpio (
         .clk(CLOCK_100),
         .resetn(resetn),
-        .enable(enables[6]),
+        .enable(enable_gpio),
         .mem_valid(mem_valid),
         .mem_ready(mem_ready_gpio),
         .mem_instr(mem_instr),
@@ -144,7 +165,7 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
     uart_rx uart_rx (
         .clk(CLOCK_100),
         .resetn(resetn),
-        .enable(enables[5]),
+        .enable(enable_uart_rx),
         .mem_valid(mem_valid),
         .mem_ready(mem_ready_uart_rx),
         .mem_instr(mem_instr),
@@ -159,7 +180,7 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
     uartTx uartTx (
         .clk(CLOCK_100),
         .resetn(resetn),
-        .enable(enables[4]),
+        .enable(enable_uart_tx),
         .mem_valid(mem_valid),
         .mem_ready(mem_ready_uart_tx),
         .mem_instr(mem_instr),
@@ -173,7 +194,7 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
     timer timer (
         .clk(CLOCK_100),
         .resetn(resetn),
-        .enable(enables[3]),
+        .enable(enable_timers),
         .mem_valid(mem_valid),
         .mem_ready(mem_ready_timer),
         .mem_instr(mem_instr),
@@ -183,13 +204,61 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
         .mem_rdata(mem_rdata_timer)
     );
 
-    address_decoder ad (
-        .address(mem_addr),
-        .enables(enables)
+    sd_audio sd_audio (
+        .clk(CLOCK_100),
+        .resetn(resetn),
+        .enable_ctrl(enable_audio_ctrl),
+        .enable_ram(enable_audio_ram),
+        .mem_valid(mem_valid),
+        .mem_ready(mem_ready_audio),
+        .mem_instr(mem_instr),
+        .mem_wstrb(mem_wstrb),
+        .mem_wdata(mem_wdata),
+        .mem_addr(mem_addr),
+        .mem_rdata(mem_rdata_audio),
+        .left_o(audio_left_o),
+        .right_o(audio_right_o)
+        
     );
 
-    assign  mem_rdata = mem_rdata_mem | mem_rdata_gpio | mem_rdata_uart_tx | mem_rdata_uart_rx | mem_rdata_timer;
-    assign  mem_ready = mem_ready_mem | mem_ready_gpio | mem_ready_uart_tx | mem_ready_uart_rx | mem_ready_timer;
+    vgatext vgatex(
+        .pixel_clk_in(pixel_clock),
+        .cpu_clk_in(CLOCK_100),
+        .resetn_in(resetn),
+        .enable_ctrl_in(enable_video_ctrl),
+        .enable_ram_in(enable_video_ram),
+        .mem_valid_in(mem_valid),
+        .mem_ready_o(mem_ready_video),
+        .mem_instr_in(mem_instr),
+        .mem_wstrb_in(mem_wstrb),
+        .mem_wdata_in(mem_wdata),
+        .mem_addr_in(mem_addr),
+        .mem_rdata_o(mem_rdata_video),
+
+        .green_o(green_o),
+        .red_o(red_o),
+        .blue_o(blue_o),
+        .hsync_o(hsync_o),
+        .vsync_o(vsync_o)
+    );
+    
+    address_decoder ad (
+        .address(mem_addr),
+        .enable_audio_ctrl(enable_audio_ctrl),
+        .enable_video_ctrl(enable_video_ctrl),
+        .enable_spi(enable_spi),
+        .enable_timers(enable_timers),
+        .enable_uart_tx(enable_uart_tx),
+        .enable_uart_rx(enable_uart_rx),
+        .enable_gpio(enable_gpio),
+        .enable_audio_ram(enable_audio_ram),
+        .enable_video_ram(enable_video_ram),
+        .enable_sdram(enable_sdram),
+        .enable_sram(enable_sram)
+    );
+
+    assign  mem_rdata = mem_rdata_mem | mem_rdata_gpio | mem_rdata_uart_tx | mem_rdata_uart_rx | mem_rdata_timer | mem_rdata_audio | mem_rdata_video;
+    assign  mem_ready = mem_ready_mem | mem_ready_gpio | mem_ready_uart_tx | mem_ready_uart_rx | mem_ready_timer | mem_ready_audio | mem_ready_video;
     
     
     
@@ -241,6 +310,6 @@ assign audio_test_out = porta_in[0]; // let's see what the input saw
     );
 
     // Put the clocks out on some pins so we can see them working.
-    assign RND_OUT = {CLOCK_100, CLOCK_100_SHIFTED, CLOCK_10, CLOCK_LOCKED};
+    assign RND_OUT = {CLOCK_100, CLOCK_100_SHIFTED, pixel_clock, CLOCK_LOCKED};
 
 endmodule

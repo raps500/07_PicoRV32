@@ -8,12 +8,14 @@
 module tb();
 
 
-reg clk, enable, mem_valid;
+reg clk, enable_mem, enable_ctrl, mem_valid, resetn;
 wire ready;
 reg [31:0] addr, data;
-sd_audio disp (
+sd_audio audio (
 	.clk(clk),
-    .enable(enable),
+    .resetn(resetn),
+    .enable_ram(enable_mem),
+	.enable_ctrl(enable_ctrl),
 	.mem_valid(mem_valid),
 	.mem_ready(ready),
 	.mem_instr(1'b0),
@@ -34,25 +36,19 @@ initial
 	begin
 	$dumpvars;
 	clk = 0;
-    enable = 0;
+    enable_ctrl = 0;
     mem_valid = 0;
-
+    enable_mem = 0;
     #25
-    enable = 1'b1;
+    enable_ctrl = 1'b1;
     mem_valid = 1'b1;
-    addr = 13'h10000;
+    addr = 32'h00000;
     data = 32'h00000001;
     #10
-    enable = 1'b0;
-	#300
-    reset = 0;
-    #86000
-    disp_toggle = 1;
-    #500
-    disp_toggle = 0;
-    
-    #100000
-	
+    enable_ctrl = 1'b0;
+    #(1000000-35)
+    #9000000
+    #50000000
 	$finish;
 	end
 	
